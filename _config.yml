@@ -1,6 +1,2 @@
 name: "verysure"
 description: "FAPA MA website"
-
-gems:
-- jekyll-sass-converter
-- jekyll-coffeescript
