@@ -1,21 +1,6 @@
 name: "verysure"
 description: "FAPA MA website"
 
-
-
-# markdown: kramdown
-# paginate: 100
-
-# output
-# permalink: /:categories/:title
-
-
-
-# for only posts styles
-# defaults:
-#     -
-#         scope:
-#             type: "posts"
-#         values:
-#             layout: "default"
-#             navbar: "navbar-shrink"
+gems:
+- jekyll-sass-converter
+- jekyll-coffeescript
