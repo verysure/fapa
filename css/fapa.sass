@@ -1,6 +1,7 @@
 ---
 ---
 
+// Import fonts
 @import url(http://fonts.googleapis.com/css?family=Raleway)
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300)
 
@@ -18,10 +19,9 @@ body, html
 // cover
 #cover-page
     height: 100%
-    background: transparent url(/img/bg_raw.jpg) no-repeat center scroll
+    background: transparent url({{site.baseurl}}/img/bg_raw.jpg) no-repeat center scroll
     position: relative
     font-family: 'Open Sans', sans-serif
-
 
     #cover-inner
         height: 100%
@@ -30,7 +30,6 @@ body, html
         top: 1px
         background: linear-gradient(rgba(0, 0, 0, 0.6) 80%, black)
 
-
     .container
         width: 80%
         margin-top: 20%
@@ -38,9 +37,6 @@ body, html
     h1
         font-size: 50px
         text-align: center
-
-
-
 
 
 // navbar
@@ -68,7 +64,6 @@ body, html
             &:hover
                 background: rgba(255, 255, 255, 0.3)
 
-
         &.active>a
             &:hover, &:active, &:visited, &:link
                 color: white
@@ -85,3 +80,9 @@ section
     h1
         text-align: center
         font-size: 40px
+
+
+
+// animation for show and hide
+.hidden
+    display: none
