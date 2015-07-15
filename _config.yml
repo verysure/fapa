@@ -1,2 +1,9 @@
 name: "verysure"
 description: "FAPA MA website"
+baseurl: /fapa
+
+
+
+# for Sass setup
+sass:
+    style: :compressed
