@@ -1,9 +1,0 @@
----
-tabname: Contact
-order: 4
----
-
-h1. Contact Us
-
-* Email: Ho-Chou
-* "Facebook":https://www.facebook.com/groups/161031927258544/

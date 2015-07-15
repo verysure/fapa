@@ -26,6 +26,20 @@ Update github-pages gem:
     bundle update
 
 
+Development
+-----------
+
+Start Jekyll for testing:
+
+    bundle exec jekyll serve
+
+For posts, we use [markdown][1] for content. [Sass][2] for preprocessed css. [Coffeescript][3] for preprocessed javascript.
+
+
+
+[1]: http://daringfireball.net/projects/markdown/syntax
+[2]: http://sass-lang.com/
+[3]: http://coffeescript.org/
 
 Licence
 -------
