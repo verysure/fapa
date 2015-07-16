@@ -1,7 +1,7 @@
 FAPA MA Website
 ===============
 
-Website designed for Formosan Association for Public Affairs Massachusetts sector ([FAPA](http://www.fapa.org/) MA). Website is maintained by [verysure](mailto:ttttonywu@gmail.com), Stephanie Chan. 
+Website designed for Formosan Association for Public Affairs Massachusetts sector ([FAPA](http://www.fapa.org/) MA). Website is maintained by [verysure](mailto:ttttonywu@gmail.com), Stephanie Chan.
 
 
 

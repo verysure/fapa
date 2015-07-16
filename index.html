@@ -15,26 +15,27 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target="#navbar-scroll">
+<body id="page-top">
+<div id="page-inner"></div>
 {% assign sections = (site.posts | sort: 'order') %}
 
     <!-- Menu Bar -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-scroll" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">FAPA MA</a>
+                <a class="navbar-brand switch-page" href="#cover-page">FAPA MA</a>
             </div>
 
             <div id="navbar-scroll" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     {% for sec in sections %}
-                    <li><a href="#{{sec.tabname | downcase}}" class="page-scroll">
+                    <li><a href="#{{sec.tabname | downcase}}" class="switch-page">
                         {{sec.tabname | downcase}}
                     </a></li>
                     {% endfor %}
@@ -47,19 +48,17 @@
     <!-- Content -->
 
     <!-- Main component for a primary marketing message or call to action -->
-    <div id="cover-page" class="jumbotron">
-        <div id="cover-inner">
-            <div class="container">
-                <h1>Welcome to FAPA MA</h1>
-                <p>
-                    Formosan Association for Public Affairs (FAPA) is a non profit organizaion to promote relations between Taiwan and United States. This page is for news and events in Massachusetts chapter.
-                </p>
-            </div>
+    <section id="cover-page">
+        <div class="container">
+            <h1>Welcome to FAPA MA</h1>
+            <br>
+            <p>
+                Formosan Association for Public Affairs (FAPA) is a non profit organizaion to promote relations between Taiwan and United States. This page is for news and events in Massachusetts chapter.
+            </p>
         </div>
-    </div>
+    </section>
 
     <!-- Sections -->
-
 {% for sec in sections %}
     <section id="{{ sec.tabname | downcase }}" class="container">
         {{sec.content}}
@@ -67,19 +66,19 @@
 {% endfor %}
 
 
-    <!-- Footer -->
-    <footer>
-    </footer>
+
 
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="{{site.baseurl}}/js/fapa.js"></script>
+
 
 
 
