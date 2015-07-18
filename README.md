@@ -10,7 +10,8 @@ For Content Creator
 We use [Markdown][1] as writing the content for the pages. The following are a brief cheatsheet on creating the content for FAPA website:
 
 
-Maintaining Website
+Maintaining Websitew
+
 -------------------
 This website uses jekyll as a static website generator. Jekyll will render the markdown posts in `_posts/` folder. Some important things to notice:
 
