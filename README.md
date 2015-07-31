@@ -180,5 +180,3 @@ Portrait Acknowledgement
 "William Keating 112th Congress Portrait" by US House of Representatives - [Licensed under Public Domain via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:William_Keating_112th_Congress_Portrait.jpg#/media/File:William_Keating_112th_Congress_Portrait.jpg)
 
 "Joe Kennedy, Official Portrait, 113th Congress" by Unknown - [Licensed under Public Domain via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Joe_Kennedy,_Official_Portrait,_113th_Congress.jpg#/media/File:Joe_Kennedy,_Official_Portrait,_113th_Congress.jpg)
-
-[5]:
