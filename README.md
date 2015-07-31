@@ -123,7 +123,7 @@ Images are a little less natural in markdown. However, it can still be done as f
 
 As you can see, a lot of symbols have functionality in markdown. To show them as what they are, you may use `\` to escape the symbols. Symbols that needs escaping are:
 
-    ` * _ {} [] () # + - . !
+    * _ {} [] () # + - . ! `
 
 
 
@@ -167,7 +167,18 @@ Start Jekyll for testing:
 [3]: http://coffeescript.org/
 [4]: http://liquidmarkup.org/
 
-Licence
+
+
+License
 =======
 
-The webpage licence is under MIT licence.
+The webpage license is under MIT license. The FAPA logo goes to FAPA. The license and credits of the representative photos are listed below
+
+Portrait Acknowledgement
+------------------------
+
+"William Keating 112th Congress Portrait" by US House of Representatives - [Licensed under Public Domain via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:William_Keating_112th_Congress_Portrait.jpg#/media/File:William_Keating_112th_Congress_Portrait.jpg)
+
+"Joe Kennedy, Official Portrait, 113th Congress" by Unknown - [Licensed under Public Domain via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Joe_Kennedy,_Official_Portrait,_113th_Congress.jpg#/media/File:Joe_Kennedy,_Official_Portrait,_113th_Congress.jpg)
+
+[5]:
