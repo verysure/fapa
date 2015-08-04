@@ -172,7 +172,7 @@ Start Jekyll for testing:
 License
 =======
 
-The webpage license is under MIT license. The FAPA logo goes to FAPA. The license and credits of the representative photos are listed below
+The webpage license is under MIT license. The FAPA logo goes to FAPA. The license and credits of the representative photos are listed below:
 
 Portrait Acknowledgement
 ------------------------
