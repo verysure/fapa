@@ -42,7 +42,7 @@
             <div id="navbar-scroll" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     {% for sec in sections %}
-                    <li><a href="#{{sec.idname}}" class="switch-page">
+                    <li><a href="#{{sec.tabname | slugify}}" class="switch-page">
                         {{sec.tabname | downcase}}
                     </a></li>
                     {% endfor %}
@@ -67,7 +67,7 @@
 
     <!-- Sections -->
 {% for sec in sections %}
-    <section id="{{sec.idname}}" class="container">
+    <section id="{{sec.tabname | slugify}}" class="container">
         {{sec.content}}
     </section>
 {% endfor %}
