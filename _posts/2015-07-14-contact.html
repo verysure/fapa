@@ -34,5 +34,18 @@ order: 4
 	<br><br>
 	<h2>Donate to FAPA-HQ</h2>
 	<br>
-	<center><a href = "https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=DphNW1SkBttsRFXnd7SQbCGSB7Lk_rxWoWqMn1Ji2GMwvrBwCV8hcwOc_vu&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2">
-	<img src = "{{site.baseurl}}/img/btn_donateCC_LG.gif" align="middle" style = "float: none"/></a></center></center>
+	
+	<form action="https://www.paypal.com/en/cgi-bin/webscr" method="post" target="paypal">
+	<input type="hidden" name="cmd" value="_donations">
+	<input type="hidden" name="business" value="fundraising@ypg.fapa.org">
+	<input type="hidden" name="return" value="http://fapa.org/new">
+	<input type="hidden" name="undefined_quantity" value="0">
+	<input type="hidden" name="item_name" value="Tax Deductable Donation to FAPA">
+	<input type="hidden" name="charset" value="utf-8">
+	<input type="hidden" name="no_shipping" value="1">
+	<input type="hidden" name="image_url" value="">
+	<input type="hidden" name="no_note" value="0"><br><br>
+		<div align="center">
+		<input type="image" src="{{site.baseurl}}/img/btn_donateCC_LG.gif" name="submit" alt="PayPal secure payments.">
+	</div>
+	</form>
