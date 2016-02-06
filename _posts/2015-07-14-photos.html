@@ -18,6 +18,7 @@ order: 3
             {% include photo.html link=photo.link pic=photo.pic content=photo.content %}
         </div>
         {% assign count = count | plus:1 %}
+        
         {% if count == 3 %}
             {% include line.html %}
             {% assign count = 0%}
