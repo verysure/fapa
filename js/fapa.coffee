@@ -51,3 +51,13 @@ $ ->
 
     $targetpage.addClass 'active-page'
     $targetpage.show()
+
+
+## Force all photo-div to be same height as its width
+$ ->
+    $('div.photo-div').each ->
+        $(this).height($(this).width())
+
+    $(window).resize ->
+        $('div.photo-div').each ->
+            $(this).height($(this).width())

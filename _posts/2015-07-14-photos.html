@@ -9,57 +9,19 @@ order: 3
 
 
 {% include line.html %}
+{% assign photos = (site.data.photos | sort: 'date') %}
+{% assign count = 0 %}
 
-<!-- <div class="row">
-    <div class="col-sm-4">
-    </div>
-    <div class="col-sm-4">
-    </div>
+<div class="row">
+    {% for photo in photos reversed %}
+        <div class="col-sm-4">
+            {% include photo.html link=photo.link pic=photo.pic content=photo.content %}
+        </div>
+        {% assign count = count | plus:1 %}
+        {% if count == 3 %}
+            {% include line.html %}
+            {% assign count = 0%}
+        {% endif %}
 
-</div> -->
-
-{% include photo.html link = "https://www.facebook.com/howard.fass/media_set?set=a.10208244347607070.1073741913.1254191653&type=3" pic='201601outreach.jpg' content="January 2016 Outreach" %}
-
-{% include line.html %}
-
-{% include photo.html link = "https://www.facebook.com/howard.fass/media_set?set=a.10208050862770070.1073741912.1254191653&type=3" pic='201512outreach.jpg' content="December 2015 Outreach" %}
-
-{% include line.html %}
-
-{% include photo.html link = "https://www.facebook.com/chungchiachun/media_set?set=a.10100894343185935.1073741867.5402638&type=3" pic='201511outreach.jpg' content="November 2015 Outreach" %}
-
-{% include line.html %}
-
-{% include photo.html link = "https://www.facebook.com/Kalithos/media_set?set=a.533075537336.1073741848.214500018&type=3" pic='201509outreach.jpg' content="September 2015 Outreach" %}
-
-{% include line.html %}
-
-{% include photo.html link = "https://www.facebook.com/fapamassachusetts/posts/844461645650818" pic='201508outreach.jpg' content="August 2015 Outreach" %}
-
-{% include line.html %}
-
-{% include photo.html link = "https://www.facebook.com/chungchiachun/media_set?set=a.10100812778527165.1073741864.5402638&type=3" pic='201507outreach.jpg' content="July 2015 Outreach" %}
-
-{% include line.html %}
-
-{% include photo.html link = "https://www.facebook.com/fapamassachusetts/posts/815273881902928" pic='201506clark.jpg' content="Visit to Rep. Clark's office" %}
-
-{% include line.html %}
-
-{% include photo.html link = "https://www.facebook.com/chungchiachun/media_set?set=a.10100795274186005.5402638&type=3" pic='201506outreach.jpg' content="June 2015 Outreach" %}
-
-{% include line.html %}
-
-{% include photo.html link = "https://www.facebook.com/howard.fass/media_set?set=a.10206562089711674.1073741901.1254191653&type=3" pic='201505outreach.jpg' content="May 2015 Outreach" %}
-
-{% include line.html %}
-
-{% include photo.html link = "https://www.facebook.com/fapamassachusetts/posts/769202506510066" pic='201503outreach.jpg' content="March 2015 Outreach" %}
-
-{% include line.html %}
-
-{% include photo.html link = "https://www.facebook.com/chungchiachun/media_set?set=a.10100711871311035.1073741855.5402638&type=3" pic='201502outreach.jpg' content="February 2015 Outreach" %}
-
-{% include line.html %}
-
-{% include photo.html link = "https://www.facebook.com/chungchiachun/media_set?set=a.10100692145481755.1073741854.5402638&type=3" pic='201501outreach.jpg' content="January 2015 Outreach" %}
+    {% endfor %}
+</div>
