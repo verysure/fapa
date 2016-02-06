@@ -20,6 +20,7 @@ $ ->
         event.preventDefault()
 
         # find target and current active page
+
         $target = $($(this).attr('href'))
         $activepage = $($('.active-page')[0])
 
@@ -35,6 +36,11 @@ $ ->
                 $target.fadeIn fadetime, ->
                     $target.addClass 'active-page'
                     $(this).addClass('active')
+
+                    # For fixing the smushed photo bug
+                    if $target.attr('id') is 'photos'
+                        $('div.photo-div').each ->
+                            $(this).height($(this).width())
 
             # Add the url bar
             if $(this).attr('href') is '#cover-page'
