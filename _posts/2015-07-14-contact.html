@@ -35,7 +35,7 @@ order: 4
 	<a href = "mailto:fapa_mass+subscribe@googlegroups.com?subject=Subscribe to FAPA MA&body=press send to subscribe to our mailing list!" target="_blank"><h2><i class="fa fa-envelope-square"></i> Join our mailing list!</h2></a>
 	<br><br>
 	<h2>Donate to FAPA-HQ</h2>
-	<br>
+	<!-- <br> -->
 
 	<form action="https://www.paypal.com/en/cgi-bin/webscr" method="post" target="paypal">
 	<input type="hidden" name="cmd" value="_donations">
@@ -46,8 +46,9 @@ order: 4
 	<input type="hidden" name="charset" value="utf-8">
 	<input type="hidden" name="no_shipping" value="1">
 	<input type="hidden" name="image_url" value="">
-	<input type="hidden" name="no_note" value="0"><br><br>
+	<input type="hidden" name="no_note" value="0">
 		<div align="center">
-		<input type="image" src="{{site.baseurl}}/img/btn_donateCC_LG.gif" name="submit" alt="PayPal secure payments.">
+		<!-- <input type="image" src="{{site.baseurl}}/img/btn_donateCC_LG.gif" name="submit" alt="PayPal secure payments."> -->
+                <button type="submit" class='paypal-button'><i class="fa fa-cc-paypal"></i></button>
 	</div>
 	</form>
